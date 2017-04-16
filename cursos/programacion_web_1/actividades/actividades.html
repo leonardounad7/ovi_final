@@ -1,0 +1,75 @@
+<article id="pre_fase">
+<div class="reduc">
+<p class='title_cont'>Actividades academicas</p><br/>
+<p class='subtitle_cont'>Actividades interactivas de refuerzo.</p><br/><p class='prog_cont'>Video tutoriales recomendados</p>
+<div class="contenedor_bien">
+<div class='ico_bien'><a href="http://www.youtube.com/watch?v=9VyLJy6tNgI&index=2&list=PL469D93BF3AE1F84F" target="_blank" ><img src='img/youtube.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Conceptos b&aacute;sicos.<br></div>
+<div class='ico_bien'><a href="http://www.youtube.com/watch?v=uxi5zaqs_yc&index=3&list=PL469D93BF3AE1F84F" target="_blank"><img src='img/youtube.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Env&iacute;o de datos por GET y POST.<br></div>
+<div class='ico_bien'><a href="http://www.youtube.com/watch?v=nndEwM3VtoM&index=4&list=PL469D93BF3AE1F84F" target="_blank"><img src='img/youtube.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Validaci&oacute;n de datos con JavaScript.<br></div><div class='ico_bien'><a href="http://www.youtube.com/watch?v=VuuPXxt2Pek&index=5&list=PL469D93BF3AE1F84F" target="_blank"><img src='img/youtube.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Subir archivos al servidor.<br></div><div class='ico_bien'><a href="http://www.youtube.com/watch?v=eoHFnABKUCE&index=6&list=PL469D93BF3AE1F84F" target="_blank"><img src='img/youtube.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Cookies.<br></div><div class='ico_bien'><a href="http://www.youtube.com/watch?v=gk8u4NZkaBQ&index=7&list=PL469D93BF3AE1F84F" target="_blank"><img src='img/youtube.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Sesiones.<br></div></div></div>
+</article>
+<article class="cent"></article>
+<article class="pdf"><div class="vertical-slider2"><ul>
+<li><img src='img/curso/PHP-Development.png'>
+</li><li><img src='img/curso/PHP-Development.png'>
+</li><li><img src='img/curso/PHP-Development.png'>
+</li>
+</ul></div></article>
+<script>jQuery(document).ready(function($) {
+	$('.vertical-slider2').unslider({autoplay: true, arrows: false, keys: false, nav: false});
+
+//boton lectura 1//
+$('#lec1').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 1</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_1.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+//boton lectura 2//
+$('#lec2').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 2</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_2.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 3//
+$('#lec3').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 3</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_3.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 4//
+$('#lec4').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 4</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_4.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 5//
+$('#lec5').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 5</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_5.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+   });
+</script>
+
+

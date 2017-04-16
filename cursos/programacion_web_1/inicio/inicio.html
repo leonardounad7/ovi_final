@@ -1,0 +1,82 @@
+<article id="pre_fase">
+<div class="reduc">
+<p class='title_cont'>Programaci&oacute;n web 1</p><br/><p class='subtitle_cont'>Informaci&oacute;n general del OVI</p><br/>
+•	En la siguiente OVI se mostraran los audios, videos y documentos que se requieren para aprender el lenguaje de programaci&oacute;n php y mysql, para ello se selecciono como ejemplo la creaci&oacute;n y conexion de una base de datos.<br/>
+<br/>
+<p class='subtitle_cont'>Objetivos del OVI</p><br/>
+•	Establecer los pasos para la vinculación de una base de datos en una página desde PHP con opciones de consulta, edición, modificación y eliminación de datos y/o registros.<br/>
+<br/>
+<p class='subtitle_cont'>Objetivos del curso</p><br/><span>
+•	Crear un Objeto Virtual de Informaci&oacute;n (OVI) utilizando los lenguajes de Dise&ntilde;o web HTML5 y CSS3.</span><br/>
+<br/>
+<p class='subtitle_cont'>Tematica</p><br/>
+•	Desarrollo de CRUD ( Create, Read, Update and Delete) en PHP: mostrar la programaci&oacute;n y los elementos necesarios para la vinculaci&oacute;n de una base de datos en una p&aacute;gina web PHP.<br/>
+<br/>
+</div>
+</article>
+<article class="cent"></article>
+<article class="pdf"><div class="vertical-slider2"><ul>
+<li><img src='img/curso/PHP-Development.png'>
+</li><li><img src='img/curso/PHP-Development.png'>
+</li><li><img src='img/curso/PHP-Development.png'>
+</li>
+</ul></div></article>
+<script>jQuery(document).ready(function($) {
+	$('.vertical-slider2').unslider({autoplay: true, arrows: false, keys: false, nav: false});
+
+//boton lectura 1//
+$('#lec1').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 1</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_1.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+//boton lectura 2//
+$('#lec2').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 2</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_2.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 3//
+$('#lec3').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 3</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_3.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 4//
+$('#lec4').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 4</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_4.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 5//
+$('#lec5').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 5</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_5.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+   });
+</script>
+
+

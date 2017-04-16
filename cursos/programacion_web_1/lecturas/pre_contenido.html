@@ -1,0 +1,74 @@
+<article id="pre_fase">
+<div class="reduc">
+<p class='title_cont'>Programaci&oacute;n web 1</p><br/><p class='subtitle_cont'>Vinculaci&oacute;n de BD a una p&aacute;gina con PHP</p><br/><p class='prog_cont'>Lecturas</p>
+<div class="contenedor_bien">
+<div class='ico_bien'><a href="#" id="lec1"><img src='img/libro.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Lectura 1. Aplicaciones Web/Sistemas Web.<br></div>
+<div class='ico_bien'><a href="#" id="lec2"><img src='img/libro.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Lectura 2. Tema 1: Introducci&oacute;n.<br></div>
+<div class='ico_bien'><a href="#" id="lec3"><img src='img/libro.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Lectura 3. Tema 2: Lenguaje PHP b&aacute;sico.<br></div><div class='ico_bien'><a href="#" id="lec4"><img src='img/libro.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Lectura 4. Tema 3: Formularios.<br></div><div class='ico_bien'><a href="#" id="lec5"><img src='img/libro.png' class='preloader'></a></div><div class='cont_bien'>&nbsp;&nbsp;Lectura 5. Tema 4: Acceso a bases de datos MySQL en PHP.<br></div></div></div>
+</article>
+<article class="cent"></article>
+<article class="pdf"><div class="vertical-slider2"><ul>
+<li><img src='img/curso/PHP-Development.png'>
+</li><li><img src='img/curso/PHP-Development.png'>
+</li><li><img src='img/curso/PHP-Development.png'>
+</li>
+</ul></div></article>
+<script>jQuery(document).ready(function($) {
+	$('.vertical-slider2').unslider({autoplay: true, arrows: false, keys: false, nav: false});
+
+//boton lectura 1//
+$('#lec1').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 1</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_1.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+//boton lectura 2//
+$('#lec2').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 2</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_2.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 3//
+$('#lec3').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 3</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_3.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 4//
+$('#lec4').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 4</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_4.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 5//
+$('#lec5').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 5</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_5.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+   });
+</script>
+
+

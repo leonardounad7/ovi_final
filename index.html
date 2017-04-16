@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programaci&oacute;n web uno</title>
+<link rel="icon" type="image/ico" href="ico.ico">
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<link href="js/unslider-master/dist/css/unslider.css" rel="stylesheet" type="text/css">
+<link href="css/popup.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/unslider-master/src/js/unslider.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/unslider-master/dist/js/unslider-min.js"></script>
+<script type="text/javascript" src="js/enlace.js"></script><script type="text/javascript" src="js/funcion.js"></script>
+<script>
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider({autoplay: true, arrows: false, keys: false, nav: false});
+			$('.vertical-slider').unslider({autoplay: true, arrows: false, keys: false, nav: false, animation: 'vertical'});
+			$('.vertical-slider2').unslider({autoplay: true, arrows: false, keys: false, nav: false, animation: 'vertical'});			
+		});
+	</script>
+</head>
+<body>
+<section><header><center><img title="Universidad Nacional Abierta y a Distancia" class="logo" src="img/logotipo_unad.png"></center></header><nav><ul><li><a href="#" id="inicio" title="INICIO">INICIO</a></li><li><a href="#" id="lecturas" title="LECTURAS">LECTURAS</a></li><li><a href="#" id="cursos" title="MULTIMEDIA">MULTIMEDIA</a></li><li><a href="#" id="actividades" title="ACTIVIDADES">ACTIVIDADES</a></li><li><a href="#" id="autor" title="AUTORES">AUTORES</a></li><li><a href="#" title="COMUNIDAD W3C" id="community">COMUNIDAD</a></li><li></li></ul></nav><section id="remove">
+<section class="imagenes"><div class="my-slider"><ul><li><img src="img/header/1.png"></li><li><img src="img/header/1.png"></li><li><img src="img/header/1.png"></li>
+</ul></div></section><section class="image_static"><article id="pre_fase"><div class="vertical-slider"><ul>
+<li><img src="img/header/2.png"></li><li><img src="img/header/2.png"></li><li><img src="img/header/2.png"></li>
+</ul></div>
+</article><article class="cent"></article><article id="rw"><div class="vertical-slider2"><ul><li><img src="img/header/3.png"></li><li><img src="img/header/3.png"></li><li><img src="img/header/3.png"></li></ul></div></article></section></section><div id="popup" style="display:none;">hola</div><div class="popup-overlay" style="height:100%;"></div>
+<section class="contacto"><article class="mt"></article><article class="cent"><article><p class="rig">Contador de visitas</p></article><article><img src="https://www.cerotec.net/contador.php?t=14&s=2&i=99517" alt="Contador de visitas y estadísticas"></article></article><article class="mt"></article></section>
+<section><p class="w3c">UNAD Comunidad</p><p class="w3c"><input type="button" onClick="window.open('https://twitter.com/universidadunad?lang=es','_blank');" value="Visitar la comunidad" class="sub2"></p></section>
+<section class="eqt"><section>Ciencia<br/><img src="img/header/4.png" class="ab"></section><section>Tecnolog&iacute;a<br/><img src="img/header/5.png" class="ab"></section><section>Innovaci&oacute;n<br/><img src="img/header/6.png" class="ab"></section><center><hr></center><br></section>
+<section><p class="tc">© 2017 UNAD, Diseño de Sitios Web. Todos los derechos reservados.<br/><span>T&eacute;rminos de Servicio | Pol&iacute;tica de Privacidad</span></p></section>
+</section>
+</body>
+</html>

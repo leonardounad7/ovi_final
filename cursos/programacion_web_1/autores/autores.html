@@ -1,0 +1,77 @@
+<article id="pre_fase">
+<div class="reduc">
+<p class='title_cont'>Autores</p><br/><p class='subtitle_cont'>Nombre</p>Estiben leonardo Cer&oacute;n Palechor<br/>
+<p class='subtitle_cont'>C&oacute;digo</p>1.083.909.533<br/>
+<p class='subtitle_cont'>Programa</p>Ingenier&iacute;a de sistemas<br/>
+<p class='subtitle_cont'>Correo Electr&oacute;nico</p>elceronp@unadvirtual.edu.co<br/>
+<p class='subtitle_cont'>Usuario Skype</p>leonardo.ceron446<br/>
+<p class='subtitle_cont'>Fotograf&iacute;a</p><img src="img/perfil.jpg" class="norm" /><br/>
+
+</div>
+</article>
+<article class="cent"></article>
+<article class="pdf"><div class="vertical-slider2"><ul>
+<li><img src='img/curso/PHP-Development.png'>
+</li><li><img src='img/curso/PHP-Development.png'>
+</li><li><img src='img/curso/PHP-Development.png'>
+</li>
+</ul></div></article>
+<script>jQuery(document).ready(function($) {
+	$('.vertical-slider2').unslider({autoplay: true, arrows: false, keys: false, nav: false});
+
+//boton lectura 1//
+$('#lec1').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 1</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_1.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+//boton lectura 2//
+$('#lec2').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 2</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_2.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 3//
+$('#lec3').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 3</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_3.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 4//
+$('#lec4').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 4</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_4.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+
+
+//boton lectura 5//
+$('#lec5').click(function(event){	
+	event.preventDefault();
+	cargarimagenloader('.imagenes');
+$('.imagenes').html('<p class="tlt">Lectura 5</p>')
+$('.imagenes').css({'color':'#FFFFFF','font-size':'1em','background':'#1D70B7','margin-bottom':'10px'})
+cargarimagenloader('.pdf');
+$.post('pdf/lectura_5.html',{},function(cargo){$('.pdf').html(cargo)});
+});
+   });
+</script>
+
+

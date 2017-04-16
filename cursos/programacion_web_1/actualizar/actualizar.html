@@ -1,0 +1,29 @@
+<article id="pre_fase">
+<div class="reduc">
+<p class='title_cont'>Programaci&oacute;n web 1</p><br/><p class='subtitle_cont'>Actualizaci&oacute;n de Registros de una Base de Datos</p><br/><p class='prog_cont'>Pasos</p>
+<div class="contenedor_bien">
+<div class='ico_bien'><img src='img/bien.png' class='preloader'></div><div class='cont_bien'>Mostrar la programaci&oacute;n y los elementos necesarios para esta vinculaci&oacute;n.<br></div>
+<div class='ico_bien'><img src='img/bien.png' class='preloader'></div><div class='cont_bien'>Creaci&oacute;n de bases de datos en gestores como MYSQL.<br></div>
+<div class='ico_bien'><img src='img/bien.png' class='preloader'></div><div class='cont_bien'>Pasos en la vinculaci&oacute;n de una base de datos en una p&aacute;gina desde PHP con opciones de consulta, edici&oacute;n, modificaci&oacute;n y eliminaci&oacute;n de datos y/o registros.<br></div>
+<input type="button" class="access" title="Continuar" value="Continuar" id="login">
+</div></div>
+</article>
+<article class="cent"></article>
+<article><iframe width="100%" height="320" src="https://www.youtube.com/embed/m-wLByfMmqg" frameborder="0" allowfullscreen></iframe></article>
+<script>jQuery(document).ready(function($) {
+	$('.vertical-slider2').unslider({autoplay: true, arrows: false, keys: false, nav: false});
+$('.access').click(function(event){  
+event.preventDefault();  
+$('#popup').fadeIn('slow');      
+		$('.popup-overlay').css('opacity', '0.5');       	
+		$('.popup-overlay').fadeIn('slow');
+		$('.popup-overlay').height($(window).height());	
+		$('#popup').html('<p><img src="img/prelogin.gif" /><br />Cargando datos<br/>Aguarde por favor...!</p><br>');		
+$.post('cursos/programacion_web_1/consul.html',{},function(exito){$('#popup').html(exito)});	
+		  
+		return false;
+   });
+   });
+</script>
+
+
